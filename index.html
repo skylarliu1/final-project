@@ -1,2 +1,75 @@
-<h1>Revolutionary Net Art</h1>
-<h2>by skylar</h2>
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>skylar's dashboard</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        position: flex;
+        background-image: url(rain.gif);
+        background-size: cover;
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+
+      /*       img {
+        width: 500px;
+      } */
+
+      .header {
+        font-family: sans-serif;
+        color: white;
+        font-size: 40px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+
+
+      .daily-reminders {
+        font-family: monospace;
+        background-color: rgba(255, 255, 255, 0.6);
+        width: 300px;
+      }
+
+      .weatherwidget-io {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!--       <div><img src="bulbasaur.gif" alt="bulbasaur gif"></div> -->
+    <div class="header">
+      <marquee behavior="slide" direction="left" loop="1">sky's dash</marquee>
+    </div>
+    <div class="daily-reminders">
+      <fieldset>
+        <legend>daily reminders</legend>
+        <label><input type="checkbox" name="meds" value="meds" checked> meds</label><br>
+        <label><input type="checkbox" name="css" value="css"> breakfast</label><br>
+        <label><input type="checkbox" name="javascript" value="javascript"> lunch</label><br>
+        <label><input type="checkbox" name="csharp" value="csharp"> dinner</label><br>
+      </fieldset>
+    </div>
+    <a class="weatherwidget-io" href="https://forecast7.com/en/41d88n87d63/chicago/?unit=us" data-label_1="chicago" data-label_2="weather" data-font="Ubuntu" data-theme="beige">chicago weather</a>
+    <script>
+      ! function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+          js = d.createElement(s);
+          js.id = id;
+          js.src = 'https://weatherwidget.io/js/widget.min.js';
+          fjs.parentNode.insertBefore(js, fjs);
+        }
+      }(document, 'script', 'weatherwidget-io-js');
+    </script>
+    <div class="progress-bar">
+
+    </div>
+    <div class="notes"></div>
+  </body>
+</html>
