@@ -9,11 +9,18 @@
       }
 
       body {
-        position: flex;
+        position: static;
         background-image: url(rain.gif);
         background-size: cover;
         padding-left: 40px;
         padding-right: 40px;
+      }
+      
+      table {
+        border: 1px solid black;
+        border-style: solid;
+        border-collapse: collapse;
+        background-color: rgba(200,200,200,0.5);        
       }
 
       /*       img {
@@ -21,22 +28,45 @@
       } */
 
       .header {
-        font-family: sans-serif;
+        font-family: "Andale Mono";
         color: white;
         font-size: 40px;
         padding-top: 30px;
         padding-bottom: 30px;
       }
 
-
       .daily-reminders {
         font-family: monospace;
+        font-size: 16px;
         background-color: rgba(255, 255, 255, 0.6);
         width: 300px;
+        position: absolute;
+        padding-bottom: 5px;
       }
 
       .weatherwidget-io {
+        position: absolute;
+        top: 180px;
         width: 300px;
+      }
+
+      .bg-totoro {
+        width: 800px;
+        position: relative;
+        top: 30px;
+        margin: 300px auto 0 auto;
+      }
+
+      .bg-totoro>img[src="totoro divider 2.png"] {
+        width: 200px;
+        position: absolute;
+        right: -80px;
+      }
+      .calendar {
+        font-family: monospace;
+        position: absolute;
+        right: 40px;
+        top: 110px;
       }
     </style>
   </head>
@@ -44,21 +74,24 @@
 
     <!--       <div><img src="bulbasaur.gif" alt="bulbasaur gif"></div> -->
     <div class="header">
-      <marquee behavior="slide" direction="left" loop="1">sky's dash</marquee>
+      <marquee behavior="slide" direction="left" loop="1">sky's dashboard</marquee>
     </div>
     <div class="daily-reminders">
       <fieldset>
         <legend>daily reminders</legend>
         <label><input type="checkbox" name="meds" value="meds" checked> meds</label><br>
-        <label><input type="checkbox" name="css" value="css"> breakfast</label><br>
-        <label><input type="checkbox" name="javascript" value="javascript"> lunch</label><br>
-        <label><input type="checkbox" name="csharp" value="csharp"> dinner</label><br>
+        <label><input type="checkbox" name="go-outside" value="go-outside" checked> go outside</label><br>
+        <label><input type="checkbox" name="read" value="read" checked> read</label><br>
+        <label><input type="checkbox" name="breakfast" value="breakfast"> breakfast</label><br>
+        <label><input type="checkbox" name="lunch" value="lunch"> lunch</label><br>
+        <label><input type="checkbox" name="dinner" value="dinner"> dinner</label><br>
+        <img style="position:absolute; top:10%; right:5%; width:50px" src="ponyo run.png" alt="ponyo">
       </fieldset>
     </div>
     <a class="weatherwidget-io" href="https://forecast7.com/en/41d88n87d63/chicago/?unit=us" data-label_1="chicago" data-label_2="weather" data-font="Ubuntu" data-theme="beige">chicago weather</a>
     <script>
       ! function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
+        let js, fjs = d.getElementsByTagName(s)[0];
         if (!d.getElementById(id)) {
           js = d.createElement(s);
           js.id = id;
@@ -67,6 +100,68 @@
         }
       }(document, 'script', 'weatherwidget-io-js');
     </script>
+    <div class="calendar">
+      <table>
+        <tr>
+          <th>mon</th>
+          <th>tue</th>
+          <th>wed</th>
+          <th>thu</th>
+          <th>fri</th>
+          <th>sat</th>
+          <th>sun</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>01</td>
+          <td>02</td>
+          <td>03</td>
+          <td>04</td>
+        </tr>
+        <tr>
+          <td>05</td>
+          <td>06</td>
+          <td>07</td>
+          <td>08</td>
+          <td>09</td>
+          <td>10</td>
+          <td>11</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>13</td>
+          <td>14</td>
+          <td>15</td>
+          <td>16</td>
+          <td>17</td>
+          <td>18</td>
+        </tr>
+        <tr>
+          <td>19</td>
+          <td>20</td>
+          <td>21</td>
+          <td>22</td>
+          <td>23</td>
+          <td>24</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>26</td>
+          <td>27</td>
+          <td>28</td>
+          <td>29</td>
+          <td>30</td>
+          <td>31</td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+    <div class="bg-totoro">
+      <img style="left: 0%; bottom: 39%;" src="totoro divider 2.png" alt="totoro with leaf">
+    	<img style="left: 0%; bottom: 39%;" src="totoro divider 2.png" alt="totoro with leaf">
+    </div>
     <div class="progress-bar">
 
     </div>
