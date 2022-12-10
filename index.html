@@ -17,10 +17,16 @@
       }
       
       table {
-        border: 1px solid black;
+        font-family: "Andale Mono";
+        color: white;
+        border: 1px solid darkgreen;
         border-style: solid;
         border-collapse: collapse;
-        background-color: rgba(200,200,200,0.5);        
+        background-color: rgba(95,133,117,0.8); 
+      }
+      
+      td {
+        padding: 40px;
       }
 
       /*       img {
@@ -50,23 +56,24 @@
         width: 300px;
       }
 
-      .bg-totoro {
-        width: 800px;
+      .bg-img {
         position: relative;
-        top: 30px;
+        top: 10px;
         margin: 300px auto 0 auto;
       }
 
-      .bg-totoro>img[src="totoro divider 2.png"] {
-        width: 200px;
+      .bg-img>img[src="Group_390.png"] {
+        width: 300px;
         position: absolute;
-        right: -80px;
+        left: -200;
       }
+      
       .calendar {
         font-family: monospace;
+        font-size: 16px;
         position: absolute;
-        right: 40px;
-        top: 110px;
+        top: 112px;
+        left: 370px;
       }
     </style>
   </head>
@@ -100,8 +107,7 @@
         }
       }(document, 'script', 'weatherwidget-io-js');
     </script>
-    <div class="calendar">
-      <table>
+      <table class="calendar">
         <tr>
           <th>mon</th>
           <th>tue</th>
@@ -157,14 +163,14 @@
           <td></td>
         </tr>
       </table>
-    </div>
-    <div class="bg-totoro">
-      <img style="left: 0%; bottom: 39%;" src="totoro divider 2.png" alt="totoro with leaf">
-    	<img style="left: 0%; bottom: 39%;" src="totoro divider 2.png" alt="totoro with leaf">
+    <div class="bg-img">
+      <img style="left: 0%; bottom: 39%;" src="Group_390.png" alt="totoro with leaf">
+<!--     	<img style="left: 0%; bottom: 39%;" src="takano.jpg" alt="aya takano drawing"> -->
     </div>
     <div class="progress-bar">
 
     </div>
     <div class="notes"></div>
+    
   </body>
 </html>
