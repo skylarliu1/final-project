@@ -15,23 +15,36 @@
         padding-left: 40px;
         padding-right: 40px;
       }
-      
+
       table {
         font-family: "Andale Mono";
         color: white;
         border: 1px solid darkgreen;
         border-style: solid;
         border-collapse: collapse;
-        background-color: rgba(95,133,117,0.8); 
+        background-color: rgba(95, 133, 117, 0.7);
       }
       
+      th {
+        text-align: left;
+      }
+
       td {
-        padding: 40px;
+/*         padding-right: 100px; */
+        padding-bottom: 50px;
+        width: 100px;
       }
 
       /*       img {
         width: 500px;
       } */
+      button {
+        position: relative;
+        padding: 8px;
+        text-align: center;
+        font-family: "Tahoma";
+        color: green;
+      }
 
       .header {
         font-family: "Andale Mono";
@@ -46,6 +59,7 @@
         font-size: 16px;
         background-color: rgba(255, 255, 255, 0.6);
         width: 300px;
+        top: 200px;
         position: absolute;
         padding-bottom: 5px;
       }
@@ -67,7 +81,7 @@
         position: absolute;
         left: -200;
       }
-      
+
       .calendar {
         font-family: monospace;
         font-size: 16px;
@@ -78,17 +92,20 @@
     </style>
   </head>
   <body>
-
     <!--       <div><img src="bulbasaur.gif" alt="bulbasaur gif"></div> -->
     <div class="header">
       <marquee behavior="slide" direction="left" loop="1">sky's dashboard</marquee>
+      <br><br>
+      <form action="https://skylarliu1.github.io/digital-folklore/index.html">
+        <button type="button">hey u!! when was the last time you painted?!1?</button>
+      </form>
     </div>
     <div class="daily-reminders">
       <fieldset>
         <legend>daily reminders</legend>
-        <label><input type="checkbox" name="meds" value="meds" checked> meds</label><br>
-        <label><input type="checkbox" name="go-outside" value="go-outside" checked> go outside</label><br>
-        <label><input type="checkbox" name="read" value="read" checked> read</label><br>
+        <label><input type="checkbox" name="meds" value="meds"> meds</label><br>
+        <label><input type="checkbox" name="go-outside" value="go-outside"> go outside</label><br>
+        <label><input type="checkbox" name="read" value="read"> read</label><br>
         <label><input type="checkbox" name="breakfast" value="breakfast"> breakfast</label><br>
         <label><input type="checkbox" name="lunch" value="lunch"> lunch</label><br>
         <label><input type="checkbox" name="dinner" value="dinner"> dinner</label><br>
@@ -107,70 +124,115 @@
         }
       }(document, 'script', 'weatherwidget-io-js');
     </script>
-      <table class="calendar">
-        <tr>
-          <th>mon</th>
-          <th>tue</th>
-          <th>wed</th>
-          <th>thu</th>
-          <th>fri</th>
-          <th>sat</th>
-          <th>sun</th>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>01</td>
-          <td>02</td>
-          <td>03</td>
-          <td>04</td>
-        </tr>
-        <tr>
-          <td>05</td>
-          <td>06</td>
-          <td>07</td>
-          <td>08</td>
-          <td>09</td>
-          <td>10</td>
-          <td>11</td>
-        </tr>
-        <tr>
-          <td>12</td>
-          <td>13</td>
-          <td>14</td>
-          <td>15</td>
-          <td>16</td>
-          <td>17</td>
-          <td>18</td>
-        </tr>
-        <tr>
-          <td>19</td>
-          <td>20</td>
-          <td>21</td>
-          <td>22</td>
-          <td>23</td>
-          <td>24</td>
-          <td>25</td>
-        </tr>
-        <tr>
-          <td>26</td>
-          <td>27</td>
-          <td>28</td>
-          <td>29</td>
-          <td>30</td>
-          <td>31</td>
-          <td></td>
-        </tr>
-      </table>
+    <table class="calendar">
+      <tr>
+        <th>mon</th>
+        <th>tue</th>
+        <th>wed</th>
+        <th>thu</th>
+        <th>fri</th>
+        <th>sat</th>
+        <th>sun</th>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>01</td>
+        <td>02</td>
+        <td>03</td>
+        <td>04</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>bio final</td>
+        <td>sosc paper</td>
+        <td>winter break --></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>05</td>
+        <td>06</td>
+        <td>07</td>
+        <td>08</td>
+        <td>09</td>
+        <td>10</td>
+        <td>11</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+        <td>16</td>
+        <td>17</td>
+        <td>18</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>funeral</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>19</td>
+        <td>20</td>
+        <td>21</td>
+        <td>22</td>
+        <td>23</td>
+        <td>24</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>xmas eve</td>
+        <td>xmas</td>
+      </tr>
+      <tr>
+        <td>26</td>
+        <td>27</td>
+        <td>28</td>
+        <td>29</td>
+        <td>30</td>
+        <td>31</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
     <div class="bg-img">
       <img style="left: 0%; bottom: 39%;" src="Group_390.png" alt="totoro with leaf">
-<!--     	<img style="left: 0%; bottom: 39%;" src="takano.jpg" alt="aya takano drawing"> -->
+      <!--     	<img style="left: 0%; bottom: 39%;" src="takano.jpg" alt="aya takano drawing"> -->
     </div>
     <div class="progress-bar">
 
     </div>
     <div class="notes"></div>
-    
+
   </body>
 </html>
